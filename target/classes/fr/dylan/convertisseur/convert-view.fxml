@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.dylan.convertisseur.ConvertController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <Label text="Convertisseur € to $">
+         <font>
+            <Font name="Yu Gothic Regular" size="28.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfEuro" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="300.0" promptText="Entrez une valeur en Euro" />
+      <HBox alignment="CENTER" maxHeight="35.0" maxWidth="205.0" prefHeight="35.0" prefWidth="205.0">
+         <children>
+            <Label fx:id="lblDollar" alignment="CENTER" prefHeight="34.0" prefWidth="142.0" text="15">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label prefHeight="35.0" prefWidth="0.0" text="\$">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+         </children>
+      </HBox>
+      <Button fx:id="btnConvert" mnemonicParsing="false" onAction="#onConvertAction" text="Convertir">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</VBox>
